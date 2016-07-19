@@ -26,12 +26,12 @@ git clone https://github.com/snollygolly/open-hearts.git
 	- Hit the 'Edit...' button
 	- Add 'C:\Python35-32;C:\Python35-32\Lib\site-packages\;C:\Python35-32\Scripts\' to the list
 	 
-	3. Install pip
+3. Install pip
     - Open the PokemonGo-Map repository on your local machine.
     - Navigate to the `Easy Setup` directory.
     - Run `setup.bat`
     
-	4. Copy the easy start files to PokemonGo-Map
+4. Copy the easy start files to PokemonGo-Map
     - Navigate to the PokemonGo-Map-EasyStart repository on your local machine
     - Executable is in `bin/Release/`
     - copy the 6 files from Release to the PokemonGo-Map repository (the same location as example.py)
