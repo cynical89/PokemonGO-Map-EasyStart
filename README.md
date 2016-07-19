@@ -13,9 +13,9 @@ This is execute the python command to start the server, and after 5 seconds will
 ### Instructions
 
 1. Clone down the repository.
-```
-git clone https://github.com/snollygolly/open-hearts.git
-```
+	```
+	git clone https://github.com/snollygolly/open-hearts.git
+	```
 
 2. Setup environment variables for Python
 	- Check if 'C:\Python27' exists
