@@ -1,0 +1,30 @@
+﻿<Window x:Class="PokeGoMap_EasyButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokeGoMap_EasyButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600" Background="#FF2D2D30" Foreground="#FFDDDDDD">
+    <Grid Height="317">
+        <Button x:Name="RunButton" Content="Start the map!" HorizontalAlignment="Left" Margin="240,282,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="RunButton_Click"/>
+        <TextBox x:Name="userText" HorizontalAlignment="Left" Height="23" Margin="300,98,0,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="passText" HorizontalAlignment="Left" Height="23" Margin="300,126,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="locateText" HorizontalAlignment="Left" Height="23" Margin="300,154,0,0" TextWrapping="Wrap" Text="Location" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Pokemon GO Map Easy Start!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,25,0,0" Foreground="#FFDDDDDD" FontSize="24"/>
+        <Label x:Name="userlabel" Content="Username:" HorizontalAlignment="Left" Margin="180,94,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
+        <Label x:Name="passlabel" Content="Password:" HorizontalAlignment="Left" Margin="180,122,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
+        <Label x:Name="locatelabel" Content="Location:" HorizontalAlignment="Left" Margin="180,150,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
+        <ComboBox x:Name="steps1" HorizontalAlignment="Left" Margin="300,209,0,0" VerticalAlignment="Top" Width="120" IsReadOnly="True" SelectedIndex="0">
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="10"/>
+        </ComboBox>
+        <ComboBox x:Name="auth" HorizontalAlignment="Left" Margin="300,182,0,0" VerticalAlignment="Top" Width="120" IsReadOnly="True" SelectedIndex="0">
+            <ComboBoxItem Content="google"/>
+            <ComboBoxItem Content="PTC"/>
+        </ComboBox>
+        <Label x:Name="authLabel" Content="Auth Service:" HorizontalAlignment="Left" Margin="180,178,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
+        <Label x:Name="stepsLabel" Content="Steps to take:" HorizontalAlignment="Left" Margin="180,207,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
+
+    </Grid>
+</Window>
