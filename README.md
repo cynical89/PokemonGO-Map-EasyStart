@@ -5,6 +5,10 @@ This is a wpf application made in C# and Visual Studio 2015. It's meant to make 
 
 This is execute the python command to start the server, and after 5 seconds will open a web browser.
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/cynical89/PokemonGo-Map-EasyStart/master/head.png">
+</p>
+
 ## Requirements:
 
 * [PokemonGo-Map](https://github.com/AHAAAAAAA/PokemonGo-Map)
