@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Debug\
 PokeGoMap_EasyButton
 none
 false
-TRACE
+DEBUG;TRACE
 C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\App.xaml
 11151548125
 
-9787008823
+5-2017746502
 13738642453
 MainWindow.xaml;
 

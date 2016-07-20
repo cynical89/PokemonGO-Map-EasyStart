@@ -12,3 +12,16 @@ C:\Users\Cynical\Documents\Visual Studio 2015\Projects\PokeGoMap-EasyButton\Poke
 C:\Users\Cynical\Documents\Visual Studio 2015\Projects\PokeGoMap-EasyButton\PokeGoMap-EasyButton\obj\Release\PokeGoMap-EasyButton.csproj.GenerateResource.Cache
 C:\Users\Cynical\Documents\Visual Studio 2015\Projects\PokeGoMap-EasyButton\PokeGoMap-EasyButton\obj\Release\PokeGoMap-EasyButton.exe
 C:\Users\Cynical\Documents\Visual Studio 2015\Projects\PokeGoMap-EasyButton\PokeGoMap-EasyButton\obj\Release\PokeGoMap-EasyButton.pdb
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\bin\Release\PokeGoMap-EasyButton.exe.config
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\bin\Release\PokeGoMap-EasyButton.exe
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\bin\Release\PokeGoMap-EasyButton.pdb
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\MainWindow.g.cs
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\App.g.cs
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\PokeGoMap-EasyButton_MarkupCompile.cache
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\PokeGoMap-EasyButton_MarkupCompile.lref
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\MainWindow.baml
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\PokeGoMap-EasyButton.g.resources
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\PokeGoMap_EasyButton.Properties.Resources.resources
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\PokeGoMap-EasyButton.csproj.GenerateResource.Cache
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\PokeGoMap-EasyButton.exe
+C:\Users\Cynical\Documents\GitHub\PokemonGO-Map-EasyStart\obj\Release\PokeGoMap-EasyButton.pdb
