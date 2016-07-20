@@ -18,7 +18,7 @@ This is execute the python command to start the server, and after 5 seconds will
 
 1. Clone down the repository.
 	```
-	git clone https://github.com/snollygolly/open-hearts.git
+	git clone https://github.com/cynical89/PokemonGO-Map-EasyStart.git
 	```
 
 2. Setup environment variables for Python
@@ -28,7 +28,7 @@ This is execute the python command to start the server, and after 5 seconds will
 	- Click on the 'Environment Variables...' button
 	- Under System variables, find the variable named "Path", and select it
 	- Hit the 'Edit...' button
-	- Add 'C:\Python35-32;C:\Python35-32\Lib\site-packages\;C:\Python35-32\Scripts\' to the list
+	- Add `C:\Python35-32;C:\Python35-32\Lib\site-packages\;C:\Python35-32\Scripts\` to the list
 	 
 3. Install pip
     - Open the PokemonGo-Map repository on your local machine.
