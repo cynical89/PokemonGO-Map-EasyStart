@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,17 +27,28 @@ namespace PokeGoMap_EasyButton
 
         #region global vars
         //bool to check that we are running so we can't hit _python again
-        private bool isRunning = false;
         private string _args;
+        private bool _canShutdown;
 
         //processes that will be started
         private readonly Process _python = new Process();
         private readonly Process _web = new Process();
+
+        private readonly Application _application = Application.Current;
         #endregion
 
         #region Main Window
         public MainWindow()
         {
+            Process[] processes= Process.GetProcessesByName("python");
+
+            if (processes.Length > 0)
+            {
+                MessageBox.Show(
+                    "There is already a python server running. Please close the python server and try again.");
+                Application.Current.Shutdown();
+            }
+
             InitializeComponent();
         }
         #endregion
@@ -49,7 +62,7 @@ namespace PokeGoMap_EasyButton
             //user arg
             string user = "-u " + userText.Text;
             //pass arg
-            string pass = "-p " + passText.Text;
+            string pass = "-p " + passText.Password;
             //location arg
             string locate = "-l " + "'" + locateText.Text + "'";
             //steps arg
@@ -58,38 +71,10 @@ namespace PokeGoMap_EasyButton
             //main arg string
             _args = "example.py " + auth + " " + user + " " + pass + " " + locate + " " + steps;
 
-            if (isRunning)
-            {
-                if (_python.HasExited)
-                {
-                    isRunning = false;
-                    run_cmd("C:/Python27/python.exe", _args);
-                }
-                else
-                {
-                    MessageBox.Show("The python server is already running. Stop the server and try again.");
-                }
-            }
-            else
-            {
                 //execute the example.py
                 run_cmd("C:/Python27/python.exe", _args);
-                isRunning = true;
-            }
         }
 
-        #endregion
-
-        #region Stop
-        private void stopButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (isRunning)
-            {
-                //stop processes and let us open everything back up.
-                _python.CloseMainWindow();
-                isRunning = false;
-            }
-        }
         #endregion
 
         #region Run Python Server
@@ -101,14 +86,21 @@ namespace PokeGoMap_EasyButton
             _python.StartInfo.Arguments = args;
             //open python server
             _python.Start();
-            //we are running now
-            isRunning = true;
-            //open the web
-            Task.Delay(5000).ContinueWith(_ =>
+            //disable use of start button.
+            RunButton.IsEnabled = false;
+            //open the web & trigger shut down
+            Task.Delay(1500).ContinueWith(_ =>
             {
                 System.Diagnostics.Process.Start("http://localhost:5000");
+                _canShutdown = true;
             }
     );
+            //after the web has started, shut down the easy start application
+            do
+            {
+                _application.Shutdown();
+            } while (!_canShutdown);
+
         }
         #endregion
     }
