@@ -37,6 +37,8 @@ This is execute the python command to start the server, and after 5 seconds will
     
 4. Copy the easy start files to PokemonGo-Map
     - Navigate to the PokemonGo-Map-EasyStart repository on your local machine
-    - Executable is in `bin/Release/`
+    - Open in Visual studio and build the project.
+    - Note : If you can't build the file, or don't want to, I have compiled the project for you  [here](https://github.com/cynical89/PokemonGO-Map-EasyStart/releases).
+    - Executable is in `bin/Release/` if you build for release, else it's in `bin/Debug/`
     - copy the 6 files from Release to the PokemonGo-Map repository (the same location as example.py)
     - Run `PokeGoMap-EasyButton.exe`
