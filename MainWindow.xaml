@@ -7,16 +7,23 @@
         mc:Ignorable="d"
         Title="PokemonGO Map Easy Starter" Height="400" Width="600" Background="#FF2D2D30" Foreground="#FFDDDDDD" Icon="Master-Ball.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Height="317">
-        <Button x:Name="RunButton" Content="Start the map!" HorizontalAlignment="Left" Margin="240,252,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="RunButton_Click"/>
-        <TextBox x:Name="userText" HorizontalAlignment="Left" Height="23" Margin="300,98,0,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="passText" HorizontalAlignment="Left" Height="23" Margin="300,126,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="locateText" HorizontalAlignment="Left" Height="23" Margin="300,154,0,0" TextWrapping="Wrap" Text="Location" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="RunButton" Content="Start the map!" HorizontalAlignment="Left" Margin="240,292,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="RunButton_Click"/>
+        <TextBox x:Name="userText" HorizontalAlignment="Left" Height="23" Margin="300,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="locateText" HorizontalAlignment="Left" Height="23" Margin="300,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label" Content="Pokemon GO Map Easy Start!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,25,0,0" Foreground="#FFDDDDDD" FontSize="24"/>
         <Label x:Name="userlabel" Content="Username:" HorizontalAlignment="Left" Margin="180,94,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
         <Label x:Name="passlabel" Content="Password:" HorizontalAlignment="Left" Margin="180,122,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
         <Label x:Name="locatelabel" Content="Location:" HorizontalAlignment="Left" Margin="180,150,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
-        <ComboBox x:Name="steps1" HorizontalAlignment="Left" Margin="300,209,0,0" VerticalAlignment="Top" Width="120" IsReadOnly="True" SelectedIndex="0">
+        <ComboBox x:Name="steps1" HorizontalAlignment="Left" Margin="300,209,0,0" VerticalAlignment="Top" Width="120" IsReadOnly="True" SelectedIndex="4">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
             <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
             <ComboBoxItem Content="10"/>
         </ComboBox>
         <ComboBox x:Name="authService" HorizontalAlignment="Left" Margin="300,182,0,0" VerticalAlignment="Top" Width="120" IsReadOnly="True" SelectedIndex="0">
@@ -25,7 +32,7 @@
         </ComboBox>
         <Label x:Name="authLabel" Content="Auth Service:" HorizontalAlignment="Left" Margin="180,178,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
         <Label x:Name="stepsLabel" Content="Steps to take:" HorizontalAlignment="Left" Margin="180,207,0,0" VerticalAlignment="Top" Foreground="#FFDDDDDD"/>
-        <Button x:Name="stopButton" Content="Stop the map!" HorizontalAlignment="Left" Margin="240,292,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="stopButton_Click"/>
+        <PasswordBox x:Name="passText" HorizontalAlignment="Left" Margin="300,126,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
 
     </Grid>
 </Window>
