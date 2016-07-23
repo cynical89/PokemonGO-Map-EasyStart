@@ -13,32 +13,21 @@ This is execute the python command to start the server, and after 5 seconds will
 
 * [PokemonGo-Map](https://github.com/AHAAAAAAA/PokemonGo-Map)
 * [Python 2.7.X](https://www.python.org/downloads/)
+* [Google Maps API key](https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&keyType=CLIENT_SIDE&reusekey=true)
 
 ### Instructions
 
-1. Clone down the repository.
+1. For instructions on how to setup and run PokemonGO-Map, please refer to the original project's  [wiki](https://github.com/AHAAAAAAA/PokemonGo-Map/wiki) Once that is installed, you can continue below.
+
+2. Clone down the repository.
 	```
 	git clone https://github.com/cynical89/PokemonGO-Map-EasyStart.git
 	```
-
-2. Setup environment variables for Python
-	- Check if 'C:\Python27' exists
-	- If it exists, then open up your environment variables
-	- Start Menu > type: 'Edit the system environment variables' (start typing 'environment') > hit enter
-	- Click on the 'Environment Variables...' button
-	- Under System variables, find the variable named "Path", and select it
-	- Hit the 'Edit...' button
-	- Add `C:\Python35-32;C:\Python35-32\Lib\site-packages\;C:\Python35-32\Scripts\` to the list
-	 
-3. Install pip
-    - Open the PokemonGo-Map repository on your local machine.
-    - Navigate to the `Easy Setup` directory.
-    - Run `setup.bat`
     
-4. Copy the easy start files to PokemonGo-Map
+3. Build/Copy the easy start files to PokemonGo-Map
     - Navigate to the PokemonGo-Map-EasyStart repository on your local machine
     - Open in Visual studio and build the project.
-    - Note : If you can't build the file, or don't want to, I have compiled the project for you  [here](https://github.com/cynical89/PokemonGO-Map-EasyStart/releases).
-    - Executable is in `bin/Release/` if you build for release, else it's in `bin/Debug/`
+    - Executable is in `bin/Release/` if you build for release, else it's in `bin/Debug/` if you compiled the project yourself.
+    - Note : If you can't build the file, or don't want to, I have compiled the project for you  [here](https://github.com/cynical89/PokemonGO-Map-EasyStart/releases). Download and extract the files.
     - copy the 6 files from Release to the PokemonGo-Map repository (the same location as example.py)
     - Run `PokeGoMap-EasyButton.exe`
