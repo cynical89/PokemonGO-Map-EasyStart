@@ -3,7 +3,7 @@ Easy start application for PokemonGo-Map (https://github.com/AHAAAAAAA/PokemonGo
 
 This is a wpf application made in C# and Visual Studio 2015. It's meant to make the executing of the python server for PokemonGo-Map easier. Enter the information in the input boxes for your account, select the steps and auth service, and press 'Start the map!'
 
-This is execute the python command to start the server, and after 5 seconds will open a web browser.
+This will execute the python command to start the server, and after 5 seconds will open a web browser.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/cynical89/PokemonGo-Map-EasyStart/master/head.png">
