@@ -26,6 +26,9 @@ namespace PokeGoMap_EasyButton
     {
 
         #region global vars
+        //server name arg.
+        private string _serv = string.Empty;
+
         //bool to check that we are running so we can't hit _python again
         private string _args;
         private bool _canShutdown;
@@ -35,12 +38,32 @@ namespace PokeGoMap_EasyButton
         private readonly Process _web = new Process();
 
         private readonly Application _application = Application.Current;
+        private static readonly DirectoryInfo Di = new DirectoryInfo("./");
+        private static readonly FileInfo[] Files = Di.GetFiles("*.py");
         #endregion
 
         #region Main Window
         public MainWindow()
         {
             Process[] processes= Process.GetProcessesByName("python");
+
+            if (Files.Length == 0)
+            {
+                MessageBox.Show("example.py and pyserver.py are not found!");
+                Application.Current.Shutdown();
+            }
+
+            foreach (var fi in Files)
+            {
+                if (fi.Name == "runserver.py")
+                {
+                    _serv = fi.Name;
+                }
+                else if (fi.Name == "example.py")
+                {
+                    _serv = fi.Name;
+                }
+            }
 
             if (processes.Length > 0)
             {
@@ -69,7 +92,7 @@ namespace PokeGoMap_EasyButton
             string steps = "-st " + steps1.Text;
 
             //main arg string
-            _args = "example.py " + auth + " " + user + " " + pass + " " + locate + " " + steps;
+            _args = _serv + " " + auth + " " + user + " " + pass + " " + locate + " " + steps;
 
                 //execute the example.py
                 run_cmd("C:/Python27/python.exe", _args);
@@ -89,7 +112,7 @@ namespace PokeGoMap_EasyButton
             //disable use of start button.
             RunButton.IsEnabled = false;
             //open the web & trigger shut down
-            Task.Delay(1500).ContinueWith(_ =>
+            Task.Delay(2000).ContinueWith(_ =>
             {
                 System.Diagnostics.Process.Start("http://localhost:5000");
                 _canShutdown = true;
