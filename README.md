@@ -1,3 +1,6 @@
+# This repository is no longer being maintained 
+Due to the PokemonGo-Map repository being shut down, this project will not be maintained. It will be left up for anyone to see how easy it is to control processes inside C#.
+
 # PokemonGO-Map-EasyStart - [Latest Release!](https://github.com/cynical89/PokemonGO-Map-EasyStart/releases/latest)
 Easy start application for PokemonGo-Map (https://github.com/AHAAAAAAA/PokemonGo-Map)
 
